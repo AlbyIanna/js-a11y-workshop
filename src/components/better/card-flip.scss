@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
 }
+
 .team-member {
     display: inline-block;
     position: relative;
 }
+
 .team-content {
     padding: 0;
     position: relative;
@@ -14,15 +16,18 @@
     width: 320px;
     text-align: center;
 }
+
 .team-content button {
     background-color: transparent;
     border: none;
     color: currentColor;
     -webkit-appearance: none;
 }
+
 .team-content .toggle-button * {
     text-decoration: underline;
 }
+
 .team-image {
     display: block;
     width: 190px;
@@ -35,6 +40,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
     text-align: center;
 }
+
 .team-content .team-name {
     display: block;
     font-size: 18px;
@@ -43,6 +49,7 @@
     margin: 0;
     margin-bottom: 10px;
 }
+
 .team-content .team-subtitle {
     margin-bottom: 0px;
     display: block;
@@ -51,12 +58,14 @@
     line-height: 1;
     color: inherit;
 }
+
 .team-member .team-image img {
     margin: 0 auto;
     border: none;
     height: auto;
     width: 100%;
 }
+
 .team-content-overlay {
     background-color: #1c6300;
     color: #fff;
@@ -77,6 +86,7 @@
     z-index: 100;
     border-radius: 90px;
 }
+
 .active .team-content-overlay {
     opacity: 1;
     visibility: visible;
@@ -87,6 +97,7 @@
     height: auto;
     border-radius: 10px;
 }
+
 .team-content-overlay .gradient-overlay {
     position: absolute;
     width: 100%;
@@ -95,14 +106,17 @@
     top: 0;
     left: 0;
 }
+
 .team-content .team-content-overlay .team-name {
     font-size: 18px;
     font-weight: 700;
     position: relative;
 }
+
 .team-content .team-content-overlay .team-subtitle {
     position: relative;
 }
+
 .team-close-button {
     border: none;
     font-weight: bold;
@@ -111,9 +125,10 @@
     right: 10px;
 
     &:focus {
-      outline: 3px solid lightblue;
+        outline: 3px solid lightblue;
     }
 }
+
 .team-content-overlay p {
     color: #fff;
     opacity: 0;
@@ -126,10 +141,12 @@
     // -o-transition: 0.25s ease-in;
     // transition: 0.25s ease-in;
 }
+
 .active .team-content-overlay p {
     opacity: 1;
     font-size: 12px;
 }
+
 .team-socials {
     position: relative;
     margin: auto;
@@ -139,12 +156,20 @@
     text-align: center;
     line-height: 12px;
 }
+
 .team-socials a {
     color: #225165;
     outline: 0;
     text-decoration: none;
 }
+
 .team-socials svg {
     margin: 0 10px;
     width: 25px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .team-content-overlay {
+        transition: 0.0001ms;
+    }
 }
